@@ -2,6 +2,11 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var secondScreenLabel: UILabel!
+    
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
