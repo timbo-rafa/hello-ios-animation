@@ -16,6 +16,10 @@
 		3F182064208E99C100BB148C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F182063208E99C100BB148C /* StartViewController.swift */; };
 		3F182066208E9A2300BB148C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F182065208E9A2300BB148C /* SecondViewController.swift */; };
 		3F182068208E9A3E00BB148C /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F182067208E9A3E00BB148C /* EndViewController.swift */; };
+		3F18206B208E9BE900BB148C /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F18206A208E9BE900BB148C /* AnimationManager.swift */; };
+		3F182070208E9F8300BB148C /* NextButton in Resources */ = {isa = PBXBuildFile; fileRef = 3F18206E208E9F8300BB148C /* NextButton */; };
+		3F182071208E9F8300BB148C /* BackButton in Resources */ = {isa = PBXBuildFile; fileRef = 3F18206F208E9F8300BB148C /* BackButton */; };
+		3F182073208EA07800BB148C /* SegueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F182072208EA07800BB148C /* SegueManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		3F182063208E99C100BB148C /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3F182065208E9A2300BB148C /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3F182067208E9A3E00BB148C /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		3F18206A208E9BE900BB148C /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		3F18206E208E9F8300BB148C /* NextButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = NextButton; sourceTree = "<group>"; };
+		3F18206F208E9F8300BB148C /* BackButton */ = {isa = PBXFileReference; lastKnownFileType = file; path = BackButton; sourceTree = "<group>"; };
+		3F182072208EA07800BB148C /* SegueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				3F182062208E995F00BB148C /* ViewControllers */,
+				3F182069208E9BC700BB148C /* Managers */,
 				3F182034208E985500BB148C /* AppDelegate.swift */,
 				3F182038208E985500BB148C /* Main.storyboard */,
 				3F18203B208E985500BB148C /* Assets.xcassets */,
+				3F18206E208E9F8300BB148C /* NextButton */,
+				3F18206F208E9F8300BB148C /* BackButton */,
 				3F18203D208E985500BB148C /* LaunchScreen.storyboard */,
 				3F182040208E985500BB148C /* Info.plist */,
 			);
@@ -137,6 +148,15 @@
 				3F182067208E9A3E00BB148C /* EndViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F182069208E9BC700BB148C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3F18206A208E9BE900BB148C /* AnimationManager.swift */,
+				3F182072208EA07800BB148C /* SegueManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F18203F208E985500BB148C /* LaunchScreen.storyboard in Resources */,
+				3F182070208E9F8300BB148C /* NextButton in Resources */,
 				3F18203C208E985500BB148C /* Assets.xcassets in Resources */,
+				3F182071208E9F8300BB148C /* BackButton in Resources */,
 				3F18203A208E985500BB148C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +302,8 @@
 				3F182066208E9A2300BB148C /* SecondViewController.swift in Sources */,
 				3F182035208E985500BB148C /* AppDelegate.swift in Sources */,
 				3F182064208E99C100BB148C /* StartViewController.swift in Sources */,
+				3F18206B208E9BE900BB148C /* AnimationManager.swift in Sources */,
+				3F182073208EA07800BB148C /* SegueManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
