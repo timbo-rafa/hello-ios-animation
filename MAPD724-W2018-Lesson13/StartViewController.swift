@@ -14,8 +14,8 @@ class StartViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         AnimateLabelIn()
-        AnimateButtonIn()
-        MoveButtonOver()
+        AnimationManager.FlipButtonIn(button: self.nextButton, options: [ .transitionFlipFromTop])
+        AnimationManager.MoveButtonOver(button: self.nextButton, dx: 125 )
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
@@ -28,18 +28,9 @@ class StartViewController: UIViewController {
             self.startScreenLabel.center.y -= 50
         }, completion: nil)
     }
-    
-    func AnimateButtonIn() {
-        UIView.transition(with: self.nextButton, duration: 2.0,
-            options: [ .transitionFlipFromTop ]
-            //.transitionCurlDown]
-            , animations: {
-            self.nextButton.isHidden = false
-        }, completion: nil)
-    }
 
     func MoveButtonOver() {
-        UIView.animate(withDuration: 2, delay: 0.25, options: [.curveEaseIn], animations: {
+        UIView.animate(withDuration: AnimationManager.duration, delay: 0.25, options: [.curveEaseIn, .allowUserInteraction], animations: {
             self.nextButton.center.x += 125
         }, completion: nil)
         
