@@ -17,20 +17,32 @@ class SecondViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        //animateButtonsInWithKeyFrames()
         animateButtonsIn()
         animateLabelIn()
     }
     
     @IBAction func backButton(_ sender: UIButton) {
-        performSegue(withIdentifier: SegueManager.EndView, sender: sender)
+        performSegue(withIdentifier: SegueManager.StartView, sender: sender)
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
-        performSegue(withIdentifier: SegueManager.StartView, sender: sender)
+        performSegue(withIdentifier: SegueManager.EndView, sender: sender)
     }
     
     
     func animateButtonsIn() {
+        let endingCenterNextButton = self.backButton.center
+        UIView.animate(withDuration: AnimationManager.duration, animations: {
+            self.backButton.center = self.nextButton.center
+        })
+        
+        UIView.animate(withDuration: AnimationManager.duration, animations: {
+            self.nextButton.center = endingCenterNextButton
+        })
+    }
+    
+    func animateButtonsInWithKeyFrames() {
     
         //AnimationManager.AnimateButtonIn(button: nextButton, options: [.curveEaseInOut])
         //AnimationManager.AnimateButtonIn(button: backButton, options: [.curveEaseInOut])

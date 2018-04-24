@@ -118,7 +118,7 @@
                         <outlet property="SecondScreenLabel" destination="Qfi-du-4ms" id="e57-B3-ub3"/>
                         <outlet property="backButton" destination="ENU-Et-Qbu" id="gkr-c8-lRA"/>
                         <outlet property="nextButton" destination="OPj-tk-Aax" id="h7V-4w-eWa"/>
-                        <segue destination="MBL-Fe-ioT" kind="presentation" identifier="EndView" id="hMC-1g-G2Z"/>
+                        <segue destination="MBL-Fe-ioT" kind="presentation" identifier="EndView" modalTransitionStyle="crossDissolve" id="hMC-1g-G2Z"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="StartView" id="ByP-ce-ojA"/>
                     </connections>
                 </viewController>
@@ -169,7 +169,7 @@
                     <connections>
                         <outlet property="backButton" destination="x4H-3h-cvV" id="Uql-VE-jdn"/>
                         <outlet property="endScreenLabel" destination="e7s-jm-jow" id="gLk-1I-TrA"/>
-                        <segue destination="TiI-pJ-bWT" kind="presentation" identifier="SecondView" id="3Hv-e8-vSA"/>
+                        <segue destination="TiI-pJ-bWT" kind="presentation" identifier="SecondView" modalTransitionStyle="coverVertical" id="3Hv-e8-vSA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70a-nH-Phs" userLabel="First Responder" sceneMemberID="firstResponder"/>
